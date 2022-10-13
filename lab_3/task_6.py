@@ -11,7 +11,6 @@ max_index = 0
 for pos, value in enumerate(list_numbers):
     max_value = list_numbers[max_index]
     if value > max_value:
-        max_value = value
         max_index = pos
 
 list_numbers[-1], list_numbers[max_index] = list_numbers[max_index], list_numbers[-1]
