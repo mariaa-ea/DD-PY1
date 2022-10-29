@@ -20,11 +20,11 @@ def get_count_char(str_):
 def frequency_of_occurrence(str_):
     number_dict = {}
     for num, value in get_count_char(main_str).items():
-        number_dict[num] = round(value/sum(get_count_char(main_str).values())*100, 2) # в процентах
+        number_dict[num] = round(value/sum(get_count_char(main_str).values())*100, 2) 
     return number_dict
 
 main_str = """
-    Данное !предложение будет разбиваться на отдельные слова. 
+    Данное предложение будет разбиваться на отдельные слова. 
     В качестве разделителя для встроенного метода split будет выбран символ пробела. На выходе мы получим список отдельных слов. 
     Далее нужно отсортировать слова в алфавитном порядке, а после сортировки склеить их с помощью метода строк join. Приступим!!!!
 """
