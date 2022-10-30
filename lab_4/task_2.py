@@ -21,8 +21,8 @@ def get_count_char(str_):
 
 def frequency_of_occurrence(str_):
     number_dict = {}
-    for num, value in get_count_char(main_str).items():
-        number_dict[num] = round(value/sum(get_count_char(main_str).values())*100, 2) 
+    for num, value in get_count_char(str_).items():
+        number_dict[num] = round(value/sum(get_count_char(str_).values())*100, 2) 
     return number_dict
 
 main_str = """
