@@ -7,6 +7,7 @@
 #                 bukva_dict[bukva] += 1
 #             else:
 #                 bukva_dict[bukva] = 1
+#     bukva_dict = dict(sorted(bukva_dict.items()))
 #     return bukva_dict
 
 def get_count_char(str_):
@@ -15,6 +16,7 @@ def get_count_char(str_):
     str_ = "".join(bukva for bukva in str_ if bukva.isalpha())
     for bukva in str_:
         bukva_dict[bukva] = bukva_dict.get(bukva, 0) + 1
+    bukva_dict = dict(sorted(bukva_dict.items()))
     return bukva_dict
 
 def frequency_of_occurrence(str_):
