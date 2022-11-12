@@ -7,7 +7,7 @@ def get_unique_list_numbers(len_length, left_lim, right_lim) -> list[int]:
         num = randint(left_lim, right_lim)
         if num not in unique_list_numbers:
             unique_list_numbers.append(num)
-        if len(unique_list_numbers) > abs(left_lim) + abs(right_lim):
+        if len(unique_list_numbers) > abs(left_lim) + abs(right_lim) + 1:
             print("Заданное количество элементов списка больше длины "
                   "интервала! Исправьте введенные значения!")
             break
