@@ -11,6 +11,8 @@ def get_unique_list_numbers(len_length, left_lim, right_lim) -> list[int]:
     :param left_lim: левый предел задаваемого интервала
     :param right_lim: правый предел задаваемого интервала
 
+    левый предел всегда меньше правого!
+
     остальные:
     len_different: длина интервала (включая ноль) при условии, что левая граница < 0,
     а правая - больше
@@ -23,7 +25,7 @@ def get_unique_list_numbers(len_length, left_lim, right_lim) -> list[int]:
     len_different = abs(left_lim) + abs(right_lim) + 1
     len_plus_or_minus = abs(left_lim) - abs(right_lim)
     if len_length < 0:
-        raise ValueError("Введите неотрицательное число! Длина списка не может быть отрицательной!")
+        raise ValueError("Введите неотрицательное число! Количество элементов не может быть отрицательным!")
         
     while len(unique_list_numbers) < len_length:
         num = randint(left_lim, right_lim)
